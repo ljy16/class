@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <!-- form->block -->
+    <form action="URL" method="POST">
+        <!-- input -> inline -->
+        <div>
+            <label for="my-name">이름:</label>
+            <input id="my-name" type="text" required autofocus>
+        </div>
+        <div>
+            <label for="my-email">이메일:</label>
+            <input id="my-email" type="email" placeholder="example@gmail.com">
+        </div>
+        <div>
+            <input type="password">
+        </div>
+        <div>
+            <label for="age">나이</label>
+            <input id = "age" type="number" value="120">
+        </div>
+        <div>
+            <input type="checkbox" value="apple" checked>사과
+            <input type="checkbox" value="banana">바나나
+            <input type="checkbox" value="sb">딸기
+        </div>
+        <div>
+            <input type="radio" name="gender" value="male">남자
+            <input type="radio" name="gender"value="female">여자
+        </div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10">기존 내용</textarea>
+        </div>
+        <div>
+            <input type="submit" value="얍얍얍">
+        </div>
+    </form>
+</body>
+</html>
