@@ -1,0 +1,16 @@
+{% include 'base.html' %}
+
+{% block content %}
+<h1>어떤 MBTI와 가장 잘 맞을까요?</h1>
+<h1>MBTI를 입력해주세요!</h1>
+
+<form action="{% url 'gunghap:result' %}" method='POST'>
+    {% csrf_token %}
+    <input type="text" name='user_mbti'>
+
+    <div>
+        <input type="submit">
+    </div>
+</form>
+
+{% endblock content %}
