@@ -1,0 +1,22 @@
+{% include 'base_board.html' %}
+
+{% block content %}
+<h1>New Posting</h1>
+
+<form action="{% url 'board:create' %}" method="POST">
+    {% csrf_token %}
+    <div>
+        <label for="subject">주제</label>
+        <input type="text" id='subject' name='subject'>
+    </div>
+    
+    <div>
+        <label for="description">서술</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    </div>
+    <input type="submit" value='제출~'>
+</form>
+    
+
+
+{% endblock content %}

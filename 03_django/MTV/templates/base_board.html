@@ -10,14 +10,13 @@
     <nav>
         <ul>
             <li>
-                <a href="{% url 'blog:index' %}">Home</a>
+                <a href="{% url 'board:index' %}">Home</a>
             </li>
             <li>
-                <a href="{% url 'blog:create' %}">New</a>
+                <a href="{% url 'board:new' %}">New</a>
             </li>
         </ul>
     </nav>
-    
     {% block content %}{% endblock content %}
 </body>
 </html>

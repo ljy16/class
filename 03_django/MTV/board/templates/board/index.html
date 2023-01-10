@@ -1,0 +1,18 @@
+{% include 'base_board.html' %}
+
+{% block content %}
+<h1>Index Page</h1>
+
+{% comment %} 모든 게시글의 subject만 리스트로 확인 {% endcomment %}
+<ul>
+    {% for posting in postings %}
+        <li>
+            <a href="{% url 'board:detail' posting.pk %}">
+                {{posting.subject}}
+            </a>
+        </li>
+    
+    {% endfor %}
+</ul>
+
+{% endblock content %}
