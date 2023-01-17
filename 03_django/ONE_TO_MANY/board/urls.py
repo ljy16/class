@@ -18,5 +18,11 @@ urlpatterns = [
 
     # articles/1/comments/2/delete/ -> 1번 게시글에 달려있는 2 번 댓글을 삭제하겠다.!
     path('<int:article_pk>/comments/<int:comment_pk>/delete/', views.delete_comment, name='delete_comment'),
+
+    # articles/1/update/
+    path('<int:article_pk>/update/', views.update_article, name='update_article'),
+
+    # articles/1/delete/
+    path('<int:article_pk>/delete/', views.delete_article, name='delete_article'),
 ]
 
